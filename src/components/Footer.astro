@@ -1,31 +1,43 @@
 ---
 import Button from "../components/Button.astro"
+import Link from "../components/Link.astro"
 ---
 
-<footer class="flex *:flex-1 flex-col lg:flex-row">
-	<div class="bg-orange-400">
-		Logo on left
-		some content under logo
+<footer class="flex *:flex-1 flex-col lg:flex-row mb-10 mx-3">
+	<div class="">
+		<img class="w-16 " src="/public/intense-logo.svg" />
+		<p>some content under logo</p>
 	</div>
 
-	<div class="bg-blue-400 text-xl">
+	<nav>
 		<ul>
-			<li><strong>Technology & Markets</strong></li>
-			<br/>
-			<li>Robotics & Machine Learning</li>
-			<li>Research & Education</li>
-			<li>Human Enablement</li>
-			<li>Security & Hospitality</li>
-			<li>Food & Agriculture</li>
+			<li>Product</li>
+			<li><Link href="/">TH-1</Link></li>
 		</ul>
 		<ul>
-			<li><strong>Product</strong></li>
-			<li>The Hand TH-1</li>
+			<li>Applications</li>
+			<li><Link href="/">Research</Link></li>
+			<li><Link href="/">Education</Link></li>
+			<li><Link href="/">Security</Link></li>
+			<li><Link href="/">Hospitality</Link></li>
+			<li><Link href="/">Agriculture</Link></li>
 		</ul>
+		
 		<ul>
-			<li><strong>About</strong></li>
-			<br/>
-			<Button>Contact</Button>
+			<li>About</li>
+			<li><Button>Contact</Button></li>
 		</ul>
-	</div>
+	</nav>
 </footer>
+
+<style>
+	nav {
+			@apply flex;
+		ul {
+			@apply flex-1;
+			li:first-child {
+				@apply mb-2 font-bold;
+			}
+		}
+	}
+</style>

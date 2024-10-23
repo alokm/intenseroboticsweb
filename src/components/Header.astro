@@ -2,19 +2,19 @@
 import Button from "./Button.astro"
 import Link from "./Link.astro"
 ---
-
-<header class="border-b p-2 flex justify-between items-center">
-	<a href="/" class="text-4xl text-blue-500">Intense Robotics</a>
-	
+<header class="p-3 fixed w-full bg-intense-dark opacity-90 flex justify-between items-center">
+	<a href="/" class="flex items-center gap-5">	
+		<img class="w-16 " src="/public/intense-logo.svg" />
+		<strong class="text-4xl intense-gradient">Intense Robotics</strong>
+	</a>
+		
 	<nav class="flex gap-5 items-center">
 		<ul class="flex gap-5">
-			<li><Link href="/">Technology & Markets</Link></li>
-			<li><Link href="/">Product & Applications</Link></li>
-			<li><Link href="/">About</Link></li>
+			<li><Link scale href="/">Product</Link></li>
+			<li><Link scale href="/">Applications</Link></li>
+			<li><Link scale href="/">About</Link></li>
 		</ul>
-		<Button><strong class="text-2xl">Contact</strong></Button>
+		<Button class="text-2xl">Contact</Button>
 	</nav>
-	
-	
-
 </header>
+<div class="h-20"/>
