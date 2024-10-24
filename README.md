@@ -1,6 +1,6 @@
 # Requirements 
 
-NPM
+npm
 
 # Launch locally
 
